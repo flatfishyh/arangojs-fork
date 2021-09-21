@@ -1,6 +1,8 @@
 # ArangoDB JavaScript Driver
 
-The official ArangoDB JavaScript client for Node.js and the browser.
+> This is a fork with some patches merged and published to NPM until official repository catches up.
+
+The ~~official~~ ArangoDB JavaScript client for Node.js and the browser.
 
 [![license - APACHE-2.0](https://img.shields.io/npm/l/arangojs.svg)](http://opensource.org/licenses/APACHE-2.0)
 [![Continuous Integration](https://github.com/arangodb/arangojs/workflows/Continuous%20Integration/badge.svg)](https://github.com/arangodb/arangojs/actions?query=workflow:"Continuous+Integration")
