@@ -648,7 +648,7 @@ describe("Foxx service", () => {
     try {
       await db.collection(col).get();
       expect.fail();
-    } catch (e) {
+    } catch (e: any) {
       expect(e).to.be.instanceOf(ArangoError);
       expect(e.errorNum).to.equal(1203);
     }
@@ -661,7 +661,7 @@ describe("Foxx service", () => {
     );
     try {
       await db.runServiceScript(mount, "no", {});
-    } catch (e) {
+    } catch (e: any) {
       expect(e).to.be.instanceOf(ArangoError);
       expect(e.code).to.equal(400);
       expect(e.errorNum).to.equal(3016);
@@ -828,7 +828,7 @@ describe("Foxx service", () => {
       try {
         await method();
         expect.fail();
-      } catch (e) {
+      } catch (e: any) {
         expect(e).to.be.instanceOf(ArangoError);
         expect(e.code).to.equal(400);
       }
@@ -838,7 +838,7 @@ describe("Foxx service", () => {
       try {
         await method(`/dev/null`);
         expect.fail();
-      } catch (e) {
+      } catch (e: any) {
         expect(e).to.be.instanceOf(ArangoError);
         expect(e.code).to.equal(400);
       }

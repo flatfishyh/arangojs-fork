@@ -3520,7 +3520,7 @@ export class Collection<T extends Record<string, unknown> = any>
         },
         () => true
       );
-    } catch (err) {
+    } catch (err: any) {
       if (err.code === 404) {
         return false;
       }

@@ -187,7 +187,7 @@ export function createRequest(
           agentOptions.before(req);
         }
         req.end();
-      } catch (e) {
+      } catch (e: any) {
         if (called) return;
         called = true;
         setTimeout(() => {

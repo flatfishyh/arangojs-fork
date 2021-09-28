@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "arangojs",
   "version": "7.5.0",
   "engines": {
@@ -20,6 +19,10 @@
     {
       "name": "Alan Plum",
       "email": "me@pluma.io"
+    },
+    {
+      "name": "Alex Gorbatchev",
+      "email": "alex.gorbatchev@gmail.com"
     }
   ],
   "keywords": [
@@ -50,6 +53,7 @@
     "arango-test": "mocha --reporter json --require source-map-support/register --timeout 30000 build/test",
     "jenkins": "mocha --reporter spec --require source-map-support/register --timeout 0 build/test",
     "test": "mocha --reporter spec --require source-map-support/register --timeout 10000 build/test",
+    "test:docker": "./scripts/test-with-docker",
     "pretest": "npm run build",
     "build:package": "cat package.json | jq 'delpaths([[\"private\"],[\"scripts\"],[\"devDependencies\"],[\"babel\"],[\"browserslist\"]])' | sed 's/build\\///g' | sed -r 's/src\\/([^\"]+)\\.ts/\\1.js/g' > build/package.json",
     "build:cjs": "tsc -p . --outDir ./build/ --target es2018 --declarationMap true",
@@ -59,47 +63,47 @@
     "prepare": "npm run build && node -e 'require(\".\");'"
   },
   "dependencies": {
-    "@types/node": ">=13.13.4",
-    "es6-error": "^4.0.1",
+    "es6-error": "^4.1.1",
     "multi-part": "^3.0.0",
     "x3-linkedlist": "1.2.0",
-    "xhr": "^2.4.1"
+    "xhr": "^2.6.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.16",
-    "@babel/plugin-proposal-class-properties": "^7.13.0",
-    "@babel/preset-env": "^7.13.15",
-    "@babel/preset-typescript": "^7.13.0",
-    "@types/chai": "^4.2.17",
-    "@types/mocha": "^8.2.2",
-    "@types/request-promise": "^4.1.47",
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@types/node": ">=16.10.1",
+    "@types/request-promise": "^4.1.48",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
     "arangodb-instance-manager": "^1.2.3",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "babel-preset-env": "^1.7.0",
     "chai": "^4.3.4",
-    "eslint": "^7.25.0",
+    "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-security": "^1.4.0",
     "express": "^4.17.1",
     "express-http-proxy": "^1.6.2",
-    "mocha": "^8.3.2",
+    "mocha": "^9.1.2",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.2.1",
+    "prettier": "^2.4.1",
     "process": "^0.11.10",
     "querystring": "^0.2.0",
-    "regenerator-runtime": "^0.13.7",
+    "regenerator-runtime": "^0.13.9",
     "semver": "^7.3.5",
-    "source-map-support": "^0.5.19",
-    "typedoc": "^0.20.36",
-    "typescript": "^4.2.4",
+    "source-map-support": "^0.5.20",
+    "typedoc": "^0.22.4",
+    "typescript": "^4.4.3",
     "url": "^0.11.0",
     "wait-on": "^6.0.0",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^4.6.0",
+    "webpack": "^5.54.0",
+    "webpack-cli": "^4.8.0",
     "xunit-file": "^1.0.0"
   },
   "babel": {

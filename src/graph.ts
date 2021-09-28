@@ -451,7 +451,7 @@ export class GraphVertexCollection<T extends Record<string, unknown> = any>
         },
         () => true
       );
-    } catch (err) {
+    } catch (err: any) {
       if (err.code === 404) {
         return false;
       }
@@ -858,7 +858,7 @@ export class GraphEdgeCollection<T extends Record<string, unknown> = any>
         },
         () => true
       );
-    } catch (err) {
+    } catch (err: any) {
       if (err.code === 404) {
         return false;
       }
