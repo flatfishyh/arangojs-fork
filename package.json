@@ -45,10 +45,6 @@
     "./src/lib/multipart.ts": "./src/lib/multipart.web.ts",
     "./src/lib/request.ts": "./src/lib/request.web.ts"
   },
-  "files": [
-    "**/*",
-    "!test/**"
-  ],
   "scripts": {
     "arango-test": "mocha --reporter json --require source-map-support/register --timeout 30000 build/test",
     "jenkins": "mocha --reporter spec --require source-map-support/register --timeout 0 build/test",

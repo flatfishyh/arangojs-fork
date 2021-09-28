@@ -1,0 +1,12 @@
+.git
+.github
+fixtures
+scripts
+src
+build/test
+tsconfig.json
+typedoc.json
+webpack.config.js
+smoke-test.js
+.eslintrc
+*.tgz
