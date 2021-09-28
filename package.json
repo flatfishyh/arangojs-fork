@@ -1,11 +1,11 @@
 {
-  "name": "arangojs",
+  "name": "@alexgorbatchev/arangojs",
   "version": "7.5.0",
   "engines": {
     "node": ">=10"
   },
   "license": "Apache-2.0",
-  "description": "The official ArangoDB JavaScript driver.",
+  "description": "Fork of the official ArangoDB JavaScript driver with some PR merged.",
   "homepage": "https://github.com/arangodb/arangojs",
   "bugs": {
     "url": "https://github.com/arangodb/arangojs/issues"

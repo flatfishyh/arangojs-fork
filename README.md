@@ -1,7 +1,7 @@
 # ArangoDB JavaScript Driver
 
 > This is a fork with some patches merged and published to NPM until official repository catches up. See the `CHANGELOG.md` changes taged with `[FORK]`.
-  In the instructions below replace all references to `arangojs` with `arangojs-fork`.
+  In the instructions below replace all references to `arangojs` with `@alexgorbatchev/arangojs`.
 
 The ~~official~~ ArangoDB JavaScript client for Node.js and the browser.
 
