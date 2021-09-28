@@ -1,5 +1,5 @@
 {
-  "name": "@alexgorbatchev/arangojs",
+  "name": "arangojs-fork",
   "version": "7.5.0",
   "engines": {
     "node": ">=10"
