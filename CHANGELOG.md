@@ -30,6 +30,13 @@ This driver uses semantic versioning:
   This may result in type signatures that are incompatible with TypeScript 3
   being added in future releases (including patch releases).
 
+- [FORK] Added `scripts/test-with-docker` shell script to start a docker instance
+  of `arangodb/arangodb` and run tests against it and `npm run test:docker` command.
+
+- [FORK] Fixed ``aql`${db.graph("banana")}` ``
+
+- [FORK] Upgraded dependencies.
+
 ### Added
 
 - Added `collection.documents` for fetching multiple documents
