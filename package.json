@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "arangojs-fork",
-  "version": "7.6.0",
+  "version": "7.7.0",
   "engines": {
     "node": ">=10"
   },
