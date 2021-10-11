@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "arangojs-fork",
   "version": "7.5.0",
   "engines": {
